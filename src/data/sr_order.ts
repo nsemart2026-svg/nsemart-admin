@@ -1,0 +1,217 @@
+// src/data/sr_order.ts
+
+import { Order } from "@/types/Order";
+
+export const SR_ORDERS_DUMMY: Order[] = [
+  {
+    _id: "ORD-0001",
+    userRole: "sr",
+    orderBy: {
+      _id: "sr-rahim-001",
+      name: "SR Rahim",
+      email: "sr.rahim@dressen.com"
+    },
+    trackingNumber: "TRK-11001",
+    orderInfo: [
+      {
+        orderBy: "sr-rahim",
+        shopInfo: "Dressen Uttara",
+        productInfo: "Milk 1L x4, Yogurt 500g x2",
+        trackingNumber: "TRK-11001",
+        status: "PENDING",
+        isCancelled: false,
+        quantity: 6,
+        totalAmount: {
+          subTotal: 5200,
+          tax: 0,
+          shipping: { name: "Home Delivery", type: "STANDARD" },
+          discount: 0,
+          total: 5200,
+        },
+      },
+    ],
+    customerInfo: {
+      firstName: "Rahim",
+      lastName: "Uddin",
+      email: "rahim@example.com",
+      phone: "01711-111111",
+      address: "House-10, Road-5",
+      city: "Dhaka",
+      postalCode: "1230",
+      country: "BD",
+    },
+    paymentInfo: "COD",
+    totalAmount: 5200,
+    createdAt: "2025-10-03T10:15:00.000Z",
+    updatedAt: "2025-10-03T10:20:00.000Z",
+  },
+  {
+    _id: "ORD-0002",
+    userRole: "sr",
+    orderBy: {
+      _id: "sr-rahim-001",
+      name: "SR Rahim",
+      email: "sr.rahim@dressen.com"
+    },
+    trackingNumber: "TRK-11002",
+    orderInfo: [
+      {
+        orderBy: "sr-rahim",
+        shopInfo: "Dressen Dhanmondi",
+        productInfo: "Milk 2L x2, Ghee 500g x1, Cheese 200g x3",
+        trackingNumber: "TRK-11002",
+        status: "CONFIRMED",
+        isCancelled: false,
+        quantity: 6,
+        totalAmount: {
+          subTotal: 8400,
+          tax: 0,
+          shipping: { name: "Home Delivery", type: "STANDARD" },
+          discount: 0,
+          total: 8400,
+        },
+      },
+    ],
+    customerInfo: {
+      firstName: "Shanta",
+      lastName: "Akter",
+      email: "shanta@example.com",
+      phone: "01822-222222",
+      address: "Road-7, Dhanmondi",
+      city: "Dhaka",
+      postalCode: "1207",
+      country: "BD",
+    },
+    paymentInfo: "CASH",
+    totalAmount: 8400,
+    createdAt: "2025-10-02T08:40:00.000Z",
+    updatedAt: "2025-10-02T08:45:00.000Z",
+  },
+  {
+    _id: "ORD-0003",
+    userRole: "sr",
+    orderBy: {
+      _id: "sr-rahim-001",
+      name: "SR Rahim",
+      email: "sr.rahim@dressen.com"
+    },
+    trackingNumber: "TRK-11003",
+    orderInfo: [
+      {
+        orderBy: "sr-rahim",
+        shopInfo: "Dressen Mirpur",
+        productInfo: "Yogurt 500g x3, Butter 200g x2",
+        trackingNumber: "TRK-11003",
+        status: "SHIPPED",
+        isCancelled: false,
+        quantity: 5,
+        totalAmount: {
+          subTotal: 3900,
+          tax: 0,
+          shipping: { name: "Courier", type: "EXPRESS" },
+          discount: 0,
+          total: 3900,
+        },
+      },
+    ],
+    customerInfo: {
+      firstName: "Jamal",
+      lastName: "Hossain",
+      email: "jamal@example.com",
+      phone: "01633-333333",
+      address: "Mirpur-10",
+      city: "Dhaka",
+      postalCode: "1216",
+      country: "BD",
+    },
+    paymentInfo: "CARD",
+    totalAmount: 3900,
+    createdAt: "2025-10-01T14:25:00.000Z",
+    updatedAt: "2025-10-01T14:30:00.000Z",
+  },
+  {
+    _id: "ORD-0004",
+    userRole: "sr",
+    orderBy: {
+      _id: "sr-rahim-001",
+      name: "SR Rahim",
+      email: "sr.rahim@dressen.com"
+    },
+    trackingNumber: "TRK-11004",
+    orderInfo: [
+      {
+        orderBy: "sr-rahim",
+        shopInfo: "Dressen Banani",
+        productInfo: "Milk 1L x10, Choco Milk 250ml x10",
+        trackingNumber: "TRK-11004",
+        status: "DELIVERED",
+        isCancelled: false,
+        quantity: 20,
+        totalAmount: {
+          subTotal: 11000,
+          tax: 0,
+          shipping: { name: "Home Delivery", type: "STANDARD" },
+          discount: 0,
+          total: 11000,
+        },
+      },
+    ],
+    customerInfo: {
+      firstName: "Mita",
+      lastName: "Sultana",
+      email: "mita@example.com",
+      phone: "01544-444444",
+      address: "Banani",
+      city: "Dhaka",
+      postalCode: "1212",
+      country: "BD",
+    },
+    paymentInfo: "BANK",
+    totalAmount: 11000,
+    createdAt: "2025-09-30T09:05:00.000Z",
+    updatedAt: "2025-09-30T09:10:00.000Z",
+  },
+  {
+    _id: "ORD-0005",
+    userRole: "sr",
+    orderBy: {
+      _id: "sr-rahim-001",
+      name: "SR Rahim",
+      email: "sr.rahim@dressen.com"
+    },
+    trackingNumber: "TRK-11005",
+    orderInfo: [
+      {
+        orderBy: "sr-rahim",
+        shopInfo: "Dressen Motijheel",
+        productInfo: "Butter 200g x2, Cream 250ml x2",
+        trackingNumber: "TRK-11005",
+        status: "CANCELLED",
+        isCancelled: true,
+        quantity: 4,
+        totalAmount: {
+          subTotal: 1800,
+          tax: 0,
+          shipping: { name: "Pickup", type: "PICKUP" },
+          discount: 0,
+          total: 1800,
+        },
+      },
+    ],
+    customerInfo: {
+      firstName: "Imran",
+      lastName: "Kabir",
+      email: "imran@example.com",
+      phone: "01755-555555",
+      address: "Motijheel",
+      city: "Dhaka",
+      postalCode: "1000",
+      country: "BD",
+    },
+    paymentInfo: "CARD",
+    totalAmount: 1800,
+    createdAt: "2025-09-29T12:45:00.000Z",
+    updatedAt: "2025-09-29T12:50:00.000Z",
+  },
+  // ... চাইলে আরও ডামি অর্ডার যোগ করুন
+];
